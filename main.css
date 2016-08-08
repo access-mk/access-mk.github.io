@@ -14,10 +14,22 @@
 .head .head-phones {
     text-align: right;
     font-size: 16px;
+    /*white-space: nowrap;*/
     /*border-left: 2px solid #d9d9d9;*/
 }
 .head i {
     margin-right: 7px;
+}
+@media screen and (max-width: 768px) {
+    .head,
+    .head .head-adress,
+    .head .head-phones {
+        text-align: center;
+    }
+    .head .head-brand .second-text {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #d9d9d9;
+    }
 }
 .jumbotron {
     background: url("img/jumbo1.jpg") no-repeat;
