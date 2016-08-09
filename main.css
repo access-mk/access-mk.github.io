@@ -3,6 +3,7 @@
     color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
+    text-shadow: 2px 2px 4px #000000;
 }
 .head .brandname {
     font-size: 30px;
@@ -17,7 +18,7 @@
     /*white-space: nowrap;*/
     /*border-left: 2px solid #d9d9d9;*/
 }
-.head i {
+i {
     margin-right: 7px;
 }
 @media screen and (max-width: 768px) {
@@ -42,44 +43,51 @@
     background-color: #1A7BA3;
     color: #ffffff;
 }
-.services1 h3,
-.contacts h3 {
+.services1 .container {
+    margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
 }
-.services1 .col-sm-4 {
+.services1 .img-box {
     background-color: #d9d9d9;
-    padding: 10px;
+    /*padding: 10px;*/
     border: 10px solid #1A7BA3;
     color: #000000;
     text-align: center;
     position: relative;
     cursor: pointer;
+    max-width: 32%;
+    display: inline-block;
 }
 .services1 img {
     max-width: 50%;
-    margin-right: auto;
-    margin-left: auto;
 }
 .services1 .hover-text {
     position: absolute;
     color: #ffffff;
     background-color: rgba(26, 123, 163, 0.7);
-    width: 90%;
-    height: 90%;
-    padding:10% 10%;
+    width: 95%;
+    height: 95%;
+    padding: 5% 10%;
     top: 50%;  /* position the top  edge of the element at the middle of the parent */
     left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
     display: none;
 }
 .services1 .hover-text h3 {
     text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 10% 0;
 }
-.services1 .col-sm-4:hover .hover-text {
+.services1 .img-box:hover .hover-text {
     display: block;
+}
+@media screen and (max-width: 768px) {
+    .services1 .img-box {
+        max-width: 48%;
+    }
+    .services1 .hover-text h3 {
+        font-size: 85%;
+    }
 }
 .services2 {
     background: url("img/about.jpg") no-repeat;
@@ -88,13 +96,20 @@
     padding-top: 20px;
     padding-bottom: 40px;
 }
-.services2 .services-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.services2 h2 {
+    margin-bottom: 20px;
+}
+.services2 p {
+    font-size: 18px;
 }
 .contacts {
     background-color: #1A7BA3;
     color: #ffffff;
     text-align: center;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.contacts h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
