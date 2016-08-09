@@ -75,7 +75,7 @@
                                          translateX(-50%) and translateY(-50%) */
     display: none;
 }
-.services1 .hover-text h1 {
+.services1 .hover-text h3 {
     text-shadow: 2px 2px 4px #000000;
 }
 .services1 .col-sm-4:hover .hover-text {
