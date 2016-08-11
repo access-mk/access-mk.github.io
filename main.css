@@ -43,6 +43,10 @@ i {
     background-color: #1A7BA3;
     color: #ffffff;
 }
+.services1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .services1 .buttons {
     list-style: none;
     margin: 0;
@@ -68,14 +72,14 @@ i {
     white-space: nowrap;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 3%;
     transform: translateY(-50%);
 }
 .services1 .buttons a i {
     display: inline-block;
     font-size: 60px;
     vertical-align: middle;
-    padding-left: 75%;
+    padding-left: 78%;
 }
 .services1 .buttons a:hover {
     background-color: #343434;
