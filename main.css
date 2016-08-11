@@ -86,6 +86,12 @@ i {
     .services1 .buttons a {
         width: 100%;
     }
+    .services1 .buttons a li{
+        font-size: 16px;
+    }
+    .services1 .buttons a i {
+        font-size: 50px;
+    }
 }
 @media screen and (max-width: 992px) and (min-width: 769px) {
     .services1 .buttons a {
