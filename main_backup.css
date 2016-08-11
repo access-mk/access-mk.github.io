@@ -43,53 +43,50 @@ i {
     background-color: #1A7BA3;
     color: #ffffff;
 }
-.services1 .buttons {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align:center;
+.services1 .container {
+    margin: 0 auto;
+    text-align: center;
 }
-.services1 .buttons a {
-    float:none;
-    display: inline-block;
-    text-decoration: none;
-    width: 33%;
-    margin: 5px auto;
+.services1 .img-box {
+    background-color: #d9d9d9;
+    /*padding: 10px;*/
+    border: 10px solid #1A7BA3;
     color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    padding: 5px 10px;
     text-align: center;
     position: relative;
-}
-.services1 .buttons a li {
+    cursor: pointer;
+    max-width: 32%;
     display: inline-block;
-    font-size: 18px;
-    white-space: nowrap;
+}
+.services1 img {
+    max-width: 50%;
+}
+.services1 .hover-text {
     position: absolute;
-    top: 50%;
-    left: 2%;
-    transform: translateY(-50%);
-}
-.services1 .buttons a i {
-    display: inline-block;
-    font-size: 60px;
-    vertical-align: middle;
-    padding-left: 80%;
-}
-.services1 .buttons a:hover {
-    background-color: #343434;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    background-color: rgba(26, 123, 163, 0.7);
+    width: 95%;
+    height: 95%;
+    padding: 5% 10%;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+    display: none;
+}
+.services1 .hover-text h3 {
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0;
+    padding: 10% 0;
+}
+.services1 .img-box:hover .hover-text {
+    display: block;
 }
 @media screen and (max-width: 768px) {
-    .services1 .buttons a {
-        width: 100%;
+    .services1 .img-box {
+        max-width: 48%;
     }
-}
-@media screen and (max-width: 992px) and (min-width: 769px) {
-    .services1 .buttons a {
-        width: 48%;
+    .services1 .hover-text h3 {
+        font-size: 85%;
     }
 }
 .services2 {
