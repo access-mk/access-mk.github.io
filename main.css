@@ -155,7 +155,15 @@ i {
     margin-bottom: 20px;
 }
 .contacts .map {
-    display: inline-block;
-    text-align: center;
+    position: relative;
+    /*padding-bottom: 75%;
+    height: 0; */
     overflow: hidden;
+}
+.contacts .map script {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
