@@ -148,12 +148,15 @@ i {
     color: #ffffff;
     text-align: center;
     font-size: 16px;
-    text-shadow: 2px 2px 4px #000000;
     padding-bottom: 20px;
 }
 .contacts h2 {
     text-align: center;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.contacts .contacts-list {
+    text-shadow: 2px 2px 4px #000000;
 }
 .contacts .map {
     position: relative;
