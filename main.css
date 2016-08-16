@@ -171,3 +171,12 @@ i {
     width: 100% !important;
     height: 100% !important;
 }
+.contacts .contacts-list p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.contacts .contacts-list p a:hover {
+    color: #000000;
+    font-weight: bold;
+    text-shadow: none;
+}
